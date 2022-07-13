@@ -1,7 +1,7 @@
 // users
 export const usersUrl = 'http://3.86.25.200/api/users/signup';
-export const userLogin = 'http://razordispatch.herokuapp/api/users/login';
-export const users = 'http://razordispatch.herokuapp/api/users/';
+export const userLogin = 'https://razordispatch.herokuapp/api/users/login';
+export const users = 'https://razordispatch.herokuapp/api/users/';
 
 // loads
 export const getUsers = 'http://3.86.25.200/api/users';
