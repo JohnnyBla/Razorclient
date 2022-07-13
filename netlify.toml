@@ -1,0 +1,10 @@
+[[redirects]]
+  from = "https://razordispatchback.herokuapp.com/api/users/google/token/redirect"
+  to = "https://razordispatch.com"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
+[[headers]]
+   for = "/*"
+   [headers.values]
+      Access-Control-Allow-Origin = "*"
