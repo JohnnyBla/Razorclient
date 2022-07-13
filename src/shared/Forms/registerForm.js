@@ -40,7 +40,7 @@ const RegistrationForm = () => {
             setTimeout(() => {
               setIsLoading(false);
               dispatch(closeModal());
-            }, 3000);
+            }, 2000);
           } else {
             setHeader('username in use');
           }
