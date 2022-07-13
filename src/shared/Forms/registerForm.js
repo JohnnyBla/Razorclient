@@ -46,7 +46,7 @@ const RegistrationForm = () => {
           }
         })
         .catch((err) => {
-          console.clear(err);
+          console.log(err);
         });
     }
   };
