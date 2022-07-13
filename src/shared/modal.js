@@ -93,9 +93,8 @@ const Modal = () => {
                     </p>
 
                     <MDBBtn
-                      size='md'
+                      size='lg'
                       floating
-                      className=''
                       style={{ backgroundColor: '#dd4b39' }}
                       href='#'
                       type='button'
