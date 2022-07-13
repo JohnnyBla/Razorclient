@@ -16,7 +16,7 @@ const userLoginSlice = createSlice({
       const emailaddress = value.payload;
       console.log(emailaddress);
       axios
-        .get('http://3.86.25.200/api/users/', emailaddress)
+        .get('https://razordispatchback.herokuapp.com/api/users/', emailaddress)
         .catch((err) => console.log(err));
     },
   },

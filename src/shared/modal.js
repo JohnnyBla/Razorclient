@@ -34,7 +34,7 @@ const Modal = () => {
   const googleLogin = () => {
     axios({
       method: 'get',
-      url: 'http://3.86.25.200/api/users/google/token',
+      url: 'https://razordispatchback.herokuapp.com/api/users/google/token',
       headers: {
         'Content-Type': 'application/json',
       },

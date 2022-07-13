@@ -69,7 +69,7 @@ const formSlice = createSlice({
       try {
         axios({
           method: 'DELETE',
-          url: `http://3.86.25.200/api/loads/user/${id}`,
+          url: `https://razordispatchback.herokuapp.com/api/loads/user/${id}`,
           headers: {
             Authorization: 'Bearer ' + key,
             'Content-Type': 'application/json',
@@ -87,7 +87,7 @@ const formSlice = createSlice({
       try {
         axios({
           method: 'DELETE',
-          url: `http://3.86.25.200/api/expenses/user/${id}`,
+          url: `https://razordispatchback.herokuapp.com/api/expenses/user/${id}`,
           headers: {
             Authorization: 'Bearer ' + key,
             'Content-Type': 'application/json',
@@ -105,7 +105,7 @@ const formSlice = createSlice({
       try {
         axios({
           method: 'DELETE',
-          url: `http://3.86.25.200/api/loads/${lid}`,
+          url: `https://razordispatchback.herokuapp.com/api/loads/${lid}`,
           headers: {
             Authorization: 'Bearer ' + key,
             'Content-Type': 'application/json',
@@ -123,7 +123,7 @@ const formSlice = createSlice({
       try {
         axios({
           method: 'DELETE',
-          url: `http://3.86.25.200/api/expenses/${eid}`,
+          url: `https://razordispatchback.herokuapp.com/api/expenses/${eid}`,
           headers: {
             Authorization: 'Bearer ' + key,
             'Content-Type': 'application/json',

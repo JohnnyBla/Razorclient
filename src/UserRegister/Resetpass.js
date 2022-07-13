@@ -41,7 +41,7 @@ const ResetPass = () => {
       setHeader('password must be 8 characters and include a number');
     } else {
       axios
-        .put('http://3.86.25.200/api/users', formData)
+        .put('https://razordispatchback.herokuapp.com/api/users', formData)
         .then((response) => {
           if (response.status === 200) {
             setConfirmationHeader(response.data);

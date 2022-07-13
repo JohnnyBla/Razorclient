@@ -9,7 +9,7 @@ const ExpenseReport = (props) => {
 
   const userId = props.uid;
   const userMessage = props.data;
-  const userExpenseUrl = `http://3.86.25.200/api/expenses/user/${userId}`;
+  const userExpenseUrl = `https://razordispatchback.herokuapp.com/api/expenses/user/${userId}`;
 
   useEffect(() => {
     try {

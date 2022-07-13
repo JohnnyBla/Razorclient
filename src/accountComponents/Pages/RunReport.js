@@ -21,7 +21,7 @@ const RunReport = (props) => {
   useEffect(() => {
     axios({
       method: 'GET',
-      url: `http://3.86.25.200/api/loads/user/${props.data.uid}`,
+      url: `https://razordispatchback.herokuapp.com/api/loads/user/${props.data.uid}`,
       headers: {
         Authorization: 'Bearer' + props.data.data,
         'Content-Type': 'application/json',
@@ -38,7 +38,7 @@ const RunReport = (props) => {
       });
     axios({
       method: 'GET',
-      url: `http://3.86.25.200/api/expenses/user/${props.data.uid}`,
+      url: `https://razordispatchback.herokuapp.com/api/expenses/user/${props.data.uid}`,
       headers: {
         Authorization: 'Bearer' + props.data.data,
         'Content-Type': 'application/json',

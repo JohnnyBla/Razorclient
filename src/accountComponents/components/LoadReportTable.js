@@ -8,7 +8,7 @@ const LoadReport = (props) => {
   const [userLoad, setUserLoad] = useState();
   const userId = props.uid;
   const userMessage = props.data;
-  const userLoadsUrl = `http://3.86.25.200/api/loads/user/${userId}`;
+  const userLoadsUrl = `https://razordispatchback.herokuapp.com/api/loads/user/${userId}`;
   // get loadInfo
 
   useEffect(() => {
