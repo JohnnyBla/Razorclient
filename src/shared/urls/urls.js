@@ -1,8 +1,10 @@
 // users
 export const usersUrl =
   'https://razordispatchback.herokuapp.com/api/users/signup';
-export const userLogin = 'https://razordispatch.herokuapp/api/users/login';
-export const users = 'https://razordispatch.herokuapp/api/users/';
+export const userLogin =
+  'https://razordispatchback.herokuapp.com/api/users/login';
+export const users =
+  'https://razordispatchback.herokuapp.com/api/users/';
 
 // loads
 export const getUsers = 'https://razordispatchback.herokuapp.com/api/users';
