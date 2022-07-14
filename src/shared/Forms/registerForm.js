@@ -28,15 +28,11 @@ const RegistrationForm = () => {
     } else {
       await axios
         .post(usersUrl, data)
-        .catch((err) => {
-          console.log(err.response.data.message);
-          err = err.response.data.message;
-          setHeader(err);
-        })
-        .then((response) => {
-          if (response.status === 200) {
+        .catch((err) => setHeader(err.response.data))
+        .then((res) => {
+          if (res.status === 200) {
             setIsLoading(true);
-            setHeader(response.data.status);
+            setHeader(res.data.status);
             setTimeout(() => {
               setIsLoading(false);
               dispatch(closeModal());
@@ -46,7 +42,7 @@ const RegistrationForm = () => {
           }
         })
         .catch((err) => {
-          console.log(err);
+          console.warn(err);
         });
     }
   };
