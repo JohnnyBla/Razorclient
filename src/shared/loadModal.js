@@ -53,9 +53,9 @@ const LoadModal = (props) => {
       setFeedback('Check Input for Errors');
     } else {
       setIsLoading(true);
+      dispatch(submitLoad(formData));
       setTimeout(() => {
         setIsLoading(!isLoading);
-        dispatch(submitLoad(formData));
         dispatch(closeModal());
         window.location.reload();
       }, 2000);
