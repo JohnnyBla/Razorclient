@@ -19,7 +19,9 @@ const ExpenseBreakdown = (props) => {
   // handle on click
   const handleDelete = (row) => {
     dispatch(removeSingleExpense({ eid: row, key: auth.token }));
-    window.location.reload();
+    setTimeout(() => {
+      window.location.reload();
+    }, 300);
   };
 
   // columns

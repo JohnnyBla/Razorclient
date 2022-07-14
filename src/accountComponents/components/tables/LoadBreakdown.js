@@ -18,7 +18,9 @@ const LoadBreakdown = (props) => {
   // handle on click
   const handleDelete = (row) => {
     dispatch(removeSingleLoad({ lid: row, key: auth.token }));
-    window.location.reload();
+    setTimeout(() => {
+      window.location.reload();
+    }, 300);
   };
 
   // columns

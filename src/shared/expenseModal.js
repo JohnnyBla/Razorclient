@@ -55,9 +55,9 @@ const ExpenseModal = (props) => {
       );
     } else {
       setIsLoading(true);
+      dispatch(submitExpense(formData));
       setTimeout(() => {
         setIsLoading(!isLoading);
-        dispatch(submitExpense(formData));
         dispatch(closeModal());
         window.location.reload();
       }, 2000);

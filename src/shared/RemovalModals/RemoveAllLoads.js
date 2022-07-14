@@ -32,8 +32,8 @@ const RemoveAllLoads = () => {
 
   const removeHandler = () => {
     setIsLoading(true);
+    dispatch(removeAllLoads({ id: auth.userid, key: auth.token }));
     setTimeout(() => {
-      dispatch(removeAllLoads({ id: auth.userid, key: auth.token }));
       noModal();
       window.location.reload();
     }, 2000);

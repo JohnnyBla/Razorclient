@@ -35,8 +35,8 @@ const RemoveAllExpenses = () => {
 
   const removeHandler = () => {
     setIsLoading(true);
+    dispatch(removeAllExpenses({ id: auth.userid, key: auth.token }));
     setTimeout(() => {
-      dispatch(removeAllExpenses({ id: auth.userid, key: auth.token }));
       noModal();
       window.location.reload();
     }, 2000);
