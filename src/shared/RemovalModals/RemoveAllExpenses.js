@@ -39,7 +39,7 @@ const RemoveAllExpenses = () => {
     setTimeout(() => {
       noModal();
       window.location.reload();
-    }, 2000);
+    }, 1000);
   };
 
   if (!isLoading) {

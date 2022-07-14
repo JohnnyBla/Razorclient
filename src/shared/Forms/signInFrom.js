@@ -9,7 +9,7 @@ import { closeModal } from '../../redux/modalReducer';
 
 const LoginPage = () => {
   const auth = useContext(AuthContext);
-  const [error, setError] = useState('');
+  const [error, setError] = useState('usernames are case sensitive');
   const [count, setCount] = useState(1);
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -19,6 +19,7 @@ const LoginPage = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = async (data) => {
+    console.log(data);
     await axios
       .post(userLogin, data)
       .catch((error) => console.clear(error))
