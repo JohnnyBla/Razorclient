@@ -9,7 +9,6 @@ const DispatchComponent = (props) => {
   const auth = useContext(AuthContext);
   const user = props.uid;
 
-
   if (!user) {
     auth.logout();
   } else {
@@ -22,7 +21,7 @@ const DispatchComponent = (props) => {
             className='square border-bottom border-dark'
           >
             <MDBContainer fluid>
-              <MDBNavbarBrand href='/' className='ms-auto'>
+              <MDBNavbarBrand  className='ms-auto'>
                 <img
                   src={require('../Images/LogoImage.png')}
                   alt='logo'
