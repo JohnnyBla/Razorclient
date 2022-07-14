@@ -28,8 +28,8 @@ const AccountNavigation = (props) => {
     textDecoration: "none",
     color: "black",
   };
-
   const auth = useContext(AuthContext);
+  
 
   return (
     <>
