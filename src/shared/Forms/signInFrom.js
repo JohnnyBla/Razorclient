@@ -19,7 +19,6 @@ const LoginPage = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = async (data) => {
-    console.log(data);
     await axios
       .post(userLogin, data)
       .catch((error) => console.clear(error))
