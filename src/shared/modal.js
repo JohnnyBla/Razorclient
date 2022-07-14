@@ -3,7 +3,6 @@ import RegistrationForm from './Forms/registerForm';
 import LoginForm from './Forms/signInFrom';
 import { useDispatch } from 'react-redux';
 import { openModal, closeModal } from '../redux/modalReducer';
-import axios from 'axios';
 
 import {
   MDBBtn,
@@ -11,7 +10,6 @@ import {
   MDBModalDialog,
   MDBModalContent,
   MDBModalTitle,
-  MDBIcon,
   MDBTabs,
   MDBTabsItem,
   MDBTabsLink,
@@ -30,15 +28,6 @@ const Modal = () => {
   // function to close modal
   const noModal = () => {
     dispatch(closeModal());
-  };
-  const googleLogin = () => {
-    axios({
-      method: 'get',
-      url: 'https://razordispatchback.herokuapp.com/api/users/google/token/redirect',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    }).catch((err) => console.log(err));
   };
 
   // set fill for pills Login and Register
@@ -86,29 +75,9 @@ const Modal = () => {
           <MDBTabsContent>
             <MDBTabsPane show={fillActive === 'tab1'}>
               <div className='container'>
-                <div className='row mx-auto text-center'>
-                  <div className='col'>
-                    <p className='text-center fw-bold text-uppercase font-monospace'>
-                      Sign In With:
-                    </p>
-
-                    <MDBBtn
-                      size='lg'
-                      floating
-                      style={{ backgroundColor: '#dd4b39' }}
-                      href='#'
-                      type='button'
-                      onClick={googleLogin}
-                    >
-                      <MDBIcon fab icon='google' />
-                    </MDBBtn>
-                  </div>
-                </div>
-              </div>
-              <div className='container'>
                 <div className='row mx-auto'>
                   <div className='mt-3 mb-2 text-center text-uppercase fw-bold font-monospace'>
-                    or:
+                    Login:
                   </div>
                 </div>
                 {/* Login form */}
