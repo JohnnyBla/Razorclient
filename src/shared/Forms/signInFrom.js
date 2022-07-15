@@ -9,7 +9,7 @@ import { closeModal } from '../../redux/modalReducer';
 
 const LoginPage = () => {
   const auth = useContext(AuthContext);
-  const [error, setError] = useState('usernames are case sensitive');
+  const [error, setError] = useState('');
   const [count, setCount] = useState(1);
   const navigate = useNavigate();
   const dispatch = useDispatch();
