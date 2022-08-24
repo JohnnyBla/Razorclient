@@ -1,7 +1,6 @@
 import React from 'react';
 import Navigation from './navigationComponent';
-import { MDBAccordion, MDBAccordionItem } from 'mdb-react-ui-kit';
-import { FaqQuestions } from '../shared/faqs';
+
 import Modal from '../shared/modal';
 import { useSelector } from 'react-redux/es/exports';
 
