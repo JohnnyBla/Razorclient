@@ -3,7 +3,7 @@ import Footer from '../src/components/footerComponent';
 import Home from './components/homeScreenComponent';
 import ResetPass from './UserRegister/Resetpass';
 import DispatchComponent from './accountComponents/dispatchComponent';
-import FaqSection from './components/faqComponent';
+import PrivacyPolicy from './components/privacyPolicy';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthContext } from '../src/shared/context/auth-context';
 import { useAuth } from '../src/shared/hooks/auth-hook';
@@ -23,7 +23,7 @@ function App() {
     routes = (
       <>
         <Route path='/' element={<DispatchComponent />} />
-        <Route path='/FAQs' element={<FaqSection />} />
+        <Route path='/FAQs' element={<PrivacyPolicy />} />
         <Route
           path='/Load-Report-Tables'
           element={<LoadReport info={username} data={token} uid={userid} />}
@@ -47,7 +47,6 @@ function App() {
         <Route path='*' element={<Navigate replace to='/' />} />
         <Route path='/' element={<Home />} />
         <Route path='/rdpassreset' element={<ResetPass />} />
-        <Route path='/faqs' element={<FaqSection />} />
       </>
     );
   }
