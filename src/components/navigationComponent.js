@@ -87,7 +87,7 @@ const Navigation = (props) => {
             )}
             <MDBNavbarItem>
               <a
-                href='https://app.termly.io/document/privacy-policy/c93d9c4d-fd75-43ab-bf75-082c9e39d922'
+                href='https://app.termly.io/document/terms-of-use-for-website/50048dee-8193-418e-bb10-fd070206b849'
                 target='blank'
               >
                 Privacy Policy
