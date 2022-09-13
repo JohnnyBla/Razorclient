@@ -23,8 +23,8 @@ const Navigation = (props) => {
     color: 'red',
   };
   const notActiveStyle = {
-    textDecoration: 'none',
-    color: 'black',
+    textDecoration: 'bold',
+    color: 'blue',
   };
   const handleModalToggler = () => {
     dispatch(openModal());
@@ -33,10 +33,9 @@ const Navigation = (props) => {
 
   const auth = useContext(AuthContext);
   return (
-    <MDBNavbar expand='lg' light bgColor='light'>
+    <MDBNavbar expand='lg' light bgColor='none'>
       {props.modal}
       <MDBContainer fluid>
-        <MDBNavbarBrand to='/'>Razor Dispatch</MDBNavbarBrand>
         <MDBNavbarToggler
           type='button'
           data-target='#navbarText'
@@ -47,7 +46,9 @@ const Navigation = (props) => {
         >
           <MDBIcon icon='bars' fas />
         </MDBNavbarToggler>
-        <MDBCollapse navbar show={showNavText}>
+        <MDBNavbarBrand to='/'>Razor Dispatch</MDBNavbarBrand>
+
+        <MDBCollapse navbar show={showNavText} id='navbarText'>
           <MDBNavbarNav className='mb-2 mb-lg-0 justify-content-around font-monospace'>
             <MDBNavbarItem>
               <NavLink
@@ -94,7 +95,7 @@ const Navigation = (props) => {
               </a>
             </MDBNavbarItem>
           </MDBNavbarNav>
-          <span className='navbar-text text-uppercase text-end font-monospace'>
+          <span className='navbar-text text-uppercase text-end font-monospace text-white'>
             {' '}
             Revolutionizing the way we get it done{' '}
           </span>

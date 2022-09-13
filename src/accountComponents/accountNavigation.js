@@ -14,7 +14,6 @@ import {
   MDBDropdownMenu,
   MDBDropdownToggle,
   MDBDropdownItem,
-  MDBDropdownLink,
   MDBBtn,
 } from 'mdb-react-ui-kit';
 
@@ -93,13 +92,11 @@ const AccountNavigation = (props) => {
                   <MDBDropdown>
                     <MDBDropdownToggle tag='a'>Sign-Out</MDBDropdownToggle>
                     <MDBDropdownMenu>
-                      <MDBDropdownItem>
-                        <MDBDropdownLink className='d-grid gap-2'>
-                          {' '}
-                          <MDBBtn color='danger' rounded onClick={auth.logout}>
-                            Sign-Out
-                          </MDBBtn>
-                        </MDBDropdownLink>
+                      <MDBDropdownItem link className='d-grid gap-2'>
+                        {' '}
+                        <MDBBtn color='danger' rounded onClick={auth.logout}>
+                          Sign-Out
+                        </MDBBtn>
                       </MDBDropdownItem>
                     </MDBDropdownMenu>
                   </MDBDropdown>
