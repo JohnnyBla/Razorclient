@@ -24,7 +24,7 @@ const Home = () => {
                 alt='Get it on Google Play'
                 src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'
                 height='auto'
-                width='250px'
+                width='200px'
               />
             </a>
           </div>
